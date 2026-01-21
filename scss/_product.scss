@@ -90,5 +90,9 @@
     &__image {
       aspect-ratio: 300 / 456;
     }
+
+    &__content {
+      gap: $space-400;
+    }
   }
 }

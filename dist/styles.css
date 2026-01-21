@@ -151,6 +151,9 @@ main {
   .product__image {
     aspect-ratio: 300/456;
   }
+  .product__content {
+    gap: 2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
