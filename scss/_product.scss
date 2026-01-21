@@ -78,3 +78,17 @@
     }
   }
 }
+
+/* Tablet 768px */
+@media (min-width: 48rem) {
+  .product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: none;
+    width: 37.5rem;
+
+    &__image {
+      aspect-ratio: 300 / 456;
+    }
+  }
+}
