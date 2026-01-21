@@ -1,0 +1,32 @@
+@use 'tokens' as *;
+
+@mixin text-preset($family, $size, $weight, $line-height, $letter-spacing: null) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+
+  @if $letter-spacing {
+    letter-spacing: $letter-spacing;
+  }
+}
+
+.text-preset-1 {
+  @include text-preset($font-fraunces, 2rem, $fw-bold, 1);
+}
+
+.text-preset-2 {
+  @include text-preset($font-montserrat, 0.875rem, $fw-bold, 1.1);
+}
+
+.text-preset-3 {
+  @include text-preset($font-montserrat, 0.875rem, $fw-medium, 1.6);
+}
+
+.text-preset-4 {
+  @include text-preset($font-montserrat, 0.75rem, $fw-medium, 1.2, 0.417em);
+}
+
+.text-preset-5 {
+  @include text-preset($font-montserrat, 0.8125rem, $fw-medium, 1.2);
+}
