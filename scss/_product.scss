@@ -7,9 +7,11 @@
   color: $color-grey;
   border-radius: 8px;
   overflow: hidden;
+  max-width: 21.875rem;
 
   &__image {
     aspect-ratio: 350 / 342;
+    overflow: hidden;
 
     picture,
     img {

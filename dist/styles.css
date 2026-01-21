@@ -69,7 +69,8 @@ body {
 }
 
 main {
-  max-width: 21.875rem;
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
@@ -80,9 +81,11 @@ main {
   color: #6c7289;
   border-radius: 8px;
   overflow: hidden;
+  max-width: 21.875rem;
 }
 .product__image {
   aspect-ratio: 350/342;
+  overflow: hidden;
 }
 .product__image picture,
 .product__image img {
@@ -135,6 +138,19 @@ main {
 }
 .product__add-to-cart:hover {
   background: #1a4032;
+}
+
+/* Tablet 768px */
+@media (min-width: 48rem) {
+  .product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: none;
+    width: 37.5rem;
+  }
+  .product__image {
+    aspect-ratio: 300/456;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
